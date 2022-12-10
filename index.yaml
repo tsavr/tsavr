@@ -1,0 +1,81 @@
+apiVersion: v1
+entries:
+  adguard:
+  - apiVersion: v2
+    appVersion: v0.107.16
+    created: "2022-12-10T09:12:10.010082014Z"
+    description: Adguard Home DNS server
+    digest: 956d6df6454c3f6a4ed8c373aa1e7e041105c87c63dc730a8c2befc59610bb7c
+    name: adguard
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/adguard-1.1.18/adguard-1.1.18.tgz
+    version: 1.1.18
+  backup:
+  - apiVersion: v2
+    appVersion: 0.12.0
+    created: "2022-12-10T09:12:10.110718631Z"
+    description: Restic based backup and restore solution for persistent volume claims.
+    digest: e652ea373235816a1f199fb928c63b00e381b8fb71c6f4b04868a67c3fbc708a
+    name: backup
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/backup-1.0.2/backup-1.0.2.tgz
+    version: 1.0.2
+  docker-registry:
+  - apiVersion: v1
+    appVersion: 2.8.1
+    created: "2022-12-10T09:12:10.236280526Z"
+    description: A Helm chart for Docker Registry
+    digest: 51d80d4c0a1f4e0867c15ec626d8e7ba00af5195f0436d9fed02ddbbd8022f7e
+    home: https://hub.docker.com/_/registry/
+    icon: https://helm.twun.io/docker-registry.png
+    name: docker-registry
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/docker-registry-2.2.5/docker-registry-2.2.5.tgz
+    version: 2.2.5
+  gotify:
+  - apiVersion: v2
+    appVersion: 2.0.23
+    created: "2022-12-10T09:12:10.351791908Z"
+    description: Gotify server
+    digest: f43e80ee1daa1557578867f9879c5898c1eb346fb684d39a2258d415a36c20fc
+    name: gotify
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/gotify-0.1.1/gotify-0.1.1.tgz
+    version: 0.1.1
+  letsencrypt-issuer:
+  - apiVersion: v2
+    appVersion: v1.4.0
+    created: "2022-12-10T09:12:10.466132074Z"
+    description: ClusterIssuer solving Let's Encrypt DNS challenge
+    digest: dd8da9e1a27a34b39664e802e31cef07283e1d26b3275154285cb3f0a5d7357f
+    name: letsencrypt-issuer
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/letsencrypt-issuer-0.1.1/letsencrypt-issuer-0.1.1.tgz
+    version: 0.1.1
+  tfstate-postgres:
+  - apiVersion: v2
+    appVersion: 13.3-alpine
+    created: "2022-12-10T09:12:10.585825247Z"
+    description: Posgres deployment for use as Terraform state backend
+    digest: 93d659445c59fca249679a4545b91012398b588e8fe50415320ae866991a0abf
+    name: tfstate-postgres
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/tfstate-postgres-0.1.0/tfstate-postgres-0.1.0.tgz
+    version: 0.1.0
+  wireguard:
+  - apiVersion: v2
+    appVersion: "7"
+    created: "2022-12-10T09:12:10.700152762Z"
+    description: A Helm chart for Kubernetes
+    digest: de9fcb0a4355b48aaa182b2368d383344555c4fdc518d6e5d154c0aae268a174
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
+    version: 0.1.7
+generated: "2022-12-10T09:12:10.700160162Z"
