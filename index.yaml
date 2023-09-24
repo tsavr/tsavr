@@ -3,6 +3,16 @@ entries:
   adguard:
   - apiVersion: v2
     appVersion: v0.107.16
+    created: "2023-09-24T01:54:33.046494869Z"
+    description: Adguard Home DNS server
+    digest: ddc65705cabd7380e421151197b5049c379a230613809a1cdd7434c508477cda
+    name: adguard
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/adguard-1.1.19/adguard-1.1.19.tgz
+    version: 1.1.19
+  - apiVersion: v2
+    appVersion: v0.107.16
     created: "2022-12-10T09:12:10.010082014Z"
     description: Adguard Home DNS server
     digest: 956d6df6454c3f6a4ed8c373aa1e7e041105c87c63dc730a8c2befc59610bb7c
@@ -70,6 +80,16 @@ entries:
   wireguard:
   - apiVersion: v2
     appVersion: "7"
+    created: "2023-09-24T01:54:33.185701879Z"
+    description: A Helm chart for Kubernetes
+    digest: 9e929457d64e68e9e2a86f796198ccbb6c0440b41a1e9775212428cdb5f49a65
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.8/wireguard-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: "7"
     created: "2022-12-10T09:12:10.700152762Z"
     description: A Helm chart for Kubernetes
     digest: de9fcb0a4355b48aaa182b2368d383344555c4fdc518d6e5d154c0aae268a174
@@ -78,4 +98,4 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
     version: 0.1.7
-generated: "2022-12-10T09:12:10.700160162Z"
+generated: "2023-09-24T01:54:33.185712278Z"
