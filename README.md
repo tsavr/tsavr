@@ -1,3 +1,3 @@
-# Tsavr's Apps
 
-Please **do not** treat any charts as production ready
+
+Please **do not** treat any chart as production ready
