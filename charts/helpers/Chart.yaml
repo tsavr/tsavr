@@ -1,0 +1,4 @@
+apiVersion: v2
+name: helpers
+description: A library that shall collect certain templates to reuse them among different charts.
+version: 1.0.0

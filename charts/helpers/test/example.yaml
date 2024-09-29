@@ -1,0 +1,20 @@
+{{- /* Set tolerations */}}
+{{- if .Values.tolerations }}
+{{ include "helpers.tolerations" .Values.tolerations  | indent 0 }}
+{{- end }}
+
+{{- /* Set resources */}}
+{{- if .Values.resources }}
+{{ include "helpers.resources" .Values.resources  | indent 0 }}
+{{- end }}
+
+{{- /* Set nodeSelector */}}
+{{- if .Values.nodeSelector }}
+{{- include "helpers.nodeSelector" .Values  | indent 0 }}
+{{- end }}
+
+{{- if .Values.namespace.bindtoNode }}
+  {{- if .Values.namespace.bindtoNode.role }}
+  {{- include "helpers.bindtoNode" .Values.namespace.bindtoNode | nindent 0 }}
+{{- end }}
+{{- end }}

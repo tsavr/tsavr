@@ -1,0 +1,54 @@
+---
+# Examples values file
+
+# -- If you want this component to only run on specific nodes, you can
+# configure tolerations of tainted nodes.
+# <br />
+# Example include:
+# {{- if .Values.tolerations }}
+# {{ include "helpers.tolerations" .Values.tolerations  | indent 0 }}
+# {{- end }}
+tolerations:
+  - effect: NoSchedule
+    key: infra
+    operator: Equal
+    value: reserved
+    tolerationSeconds: 600
+  - effect: NoSchedule
+    key: infra
+    operator: Equal
+    value: reserved
+    tolerationSeconds: 600
+
+# -- If you want to define resources
+# <br />
+# Example include:
+# {{- if .Values.resources }}
+# {{ include "helpers.resources" .Values.resources  | indent 0 }}
+# {{- end }}
+resources:
+  requests:
+    cpu: 4
+    memory: 8
+    ephemeral-storage: 50
+  limits:
+    cpu: 8
+    memory: 16
+    ephemeral-storage: 500
+
+nodeSelector:
+  key: node-role.kubernetes.io/infra
+  value: ''
+
+# -- If you want to annotate a namespace to run on a specific node configure the following annotations
+# <br />
+# Example include:
+#    {{- if .Values.namespace.bindtoNode }}
+#    {{- if .Values.namespace.bindtoNode.role }}
+#    {{- include "helpers.bindtoNode" .Values.namespace.bindtoNode | nindent 4 }}
+#    {{- end }}
+#    {{- end }}
+
+namespace:
+  bindtoNode:
+    role: infra
