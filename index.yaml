@@ -57,6 +57,15 @@ entries:
     version: 0.1.1
   helpers:
   - apiVersion: v2
+    created: "2024-09-29T08:04:19.152470551Z"
+    description: A library that shall collect certain templates to reuse them among
+      different charts.
+    digest: 8163c54e00822f220cd2e1ab25e2b9d8227932ba4f5ced99116cc1b739ffac7e
+    name: helpers
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/helpers-1.0.1/helpers-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2024-09-29T07:54:04.353849497Z"
     description: A library that shall collect certain templates to reuse them among
       different charts.
@@ -108,4 +117,4 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
     version: 0.1.7
-generated: "2024-09-29T07:54:04.353869014Z"
+generated: "2024-09-29T08:04:19.152487042Z"
