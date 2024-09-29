@@ -58,6 +58,20 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/docker-registry-2.2.5/docker-registry-2.2.5.tgz
     version: 2.2.5
+  gitops-argocd:
+  - apiVersion: v2
+    created: "2024-09-29T08:35:45.437450885Z"
+    dependencies:
+    - name: helpers
+      repository: https://tsavr.github.io/tsavr
+      version: ~1.0.0
+    description: Takes care of creation of Applications, Appprojects and ApplicationSets
+      (supporting different generators)
+    digest: 9a1adb13847588982ac934a040b4fef20cffc343e5ca0227d31f6fd59ff47fc0
+    name: gitops-argocd
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/gitops-argocd-1.0.1/gitops-argocd-1.0.1.tgz
+    version: 1.0.1
   gotify:
   - apiVersion: v2
     appVersion: 2.0.23
@@ -189,4 +203,4 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
     version: 0.1.7
-generated: "2024-09-29T08:13:06.012671252Z"
+generated: "2024-09-29T08:35:45.437465823Z"
