@@ -21,6 +21,20 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/adguard-1.1.18/adguard-1.1.18.tgz
     version: 1.1.18
+  argocd-operator:
+  - apiVersion: v2
+    created: "2024-09-29T08:13:05.827139766Z"
+    dependencies:
+    - name: helpers
+      repository: https://tsavr.github.io/tsavr
+      version: ~1.0.0
+    description: A helper Chart to reduce code repetition. This Chart should be called
+      as a dependency by other charts in order to install Operators.
+    digest: 5b5b856fb490305a463f6c114b7e6e8b6ba57d404a26a70105152f40982f4228
+    name: argocd-operator
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/argocd-operator-1.0.1/argocd-operator-1.0.1.tgz
+    version: 1.0.1
   backup:
   - apiVersion: v2
     appVersion: 0.12.0
@@ -85,6 +99,64 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/letsencrypt-issuer-0.1.1/letsencrypt-issuer-0.1.1.tgz
     version: 0.1.1
+  openshift-gitops:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Signing Chart
+        - kind: added
+          description: Added customer Health Checks to Argo CD Patch-yaml
+        - kind: fixed
+          description: changed Argo CD CRD to v1beta1
+        - kind: fixed
+          description: typo in health check
+        - kind: added
+          description: cleaning up chart, added new README and tried to make more options configurable.
+        - kind: added
+          description: allowing configuration of syncwave for Argo CD object.
+        - kind: fixed
+          description: updated ArgoCD resource to v1beta1
+        - kind: added
+          description: added ClusterRolebinding to enable cluster-admin permissions for Argo CD in case it is enabled
+        - kind: fixed
+          description: fixing some default Values
+        - kind: added
+          description: added tpl chart
+        - kind: added
+          description: switching some snippets to use global tpl
+        - kind: added
+          description: it is now possible to define a global AppProject
+        - kind: added
+          description: it is now possible to define the name of a ConfigMap with the list of custom CAs, that will be used inside the Repo Pod
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/signKey: |
+        fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
+        url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
+    apiVersion: v2
+    created: "2024-09-29T08:13:06.012653028Z"
+    dependencies:
+    - name: tpl
+      repository: https://charts.stderr.at/
+      version: ~1.0.0
+    description: Installs and patches the Red Hat Openshift Gitops Operator
+    digest: 99b8395f14584666e5c780f2b2dc40b974ddbc45733340b82aacb3773fdbc254
+    home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-gitops
+    icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/argo-icon-color.png
+    keywords:
+    - gitops
+    - management
+    maintainers:
+    - email: tjungbau@redhat.com
+      name: tjungbauer
+      url: https://blog.stderr.at/
+    name: openshift-gitops
+    sources:
+    - https://github.com/tjungbauer/helm-charts
+    - https://charts.stderr.at/
+    - https://github.com/tjungbauer/openshift-clusterconfig-gitops
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/openshift-gitops-1.0.48/openshift-gitops-1.0.48.tgz
+    version: 1.0.48
   tfstate-postgres:
   - apiVersion: v2
     appVersion: 13.3-alpine
@@ -117,4 +189,4 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
     version: 0.1.7
-generated: "2024-09-29T08:04:19.152487042Z"
+generated: "2024-09-29T08:13:06.012671252Z"
