@@ -1,0 +1,9 @@
+apiVersion: v2
+name: argocd-operator
+description: A helper Chart to reduce code repetition. This Chart should be called as a dependency by other charts in order to install Operators.
+version: 1.0.1
+
+dependencies:
+  - name: helpers
+    version: ~1.0.0
+    repository: https://tsavr.github.io/tsavr
