@@ -1,42 +1,20 @@
 
 
-# helper-operator
+# gitops-operator
 
-  [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/openshift-bootstraps)](https://artifacthub.io/packages/search?repo=openshift-bootstraps)
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![Lint and Test Charts](https://github.com/tjungbauer/helm-charts/actions/workflows/lint_and_test_charts.yml/badge.svg)](https://github.com/tjungbauer/helm-charts/actions/workflows/lint_and_test_charts.yml)
-  [![Release Charts](https://github.com/tjungbauer/helm-charts/actions/workflows/release.yml/badge.svg)](https://github.com/tjungbauer/helm-charts/actions/workflows/release.yml)
 
-  ![Version: 1.0.28](https://img.shields.io/badge/Version-1.0.28-informational?style=flat-square)
-
- 
-
-  ## Description
+## Description
 
   A helper Chart to reduce code repetition. This Chart should be called as a dependency by other charts in order to install Operators.
 
 This chart can be used to install Operators in OpenShift.
-It is best used with a GitOps approach such as Argo CD does. For example: https://github.com/tjungbauer/openshift-clusterconfig-gitops
+It is best used with a GitOps approach such as Argo CD does.
 
 This chart will create the objects: Namespace, Subscription, OperatorGroup and a Job, that will enable additional console plugins, if enabled.
 
-*NOTE*: It is usually used as Subchart for other Charts and it works best with the second subchart [helper-status-checker](https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-status-checker)
+*NOTE*: It is usually used as Subchart for other Charts and it works best with the second subchart [helper-status-checker](https://github.com/tsavr/tsavr/tree/main/charts/helper-status-checker)
 
-## Maintainers
-
-| Name | Email | Url |
-| ---- | ------ | --- |
-| tjungbauer | <tjungbau@redhat.com> | <https://blog.stderr.at/> |
-
-## Sources
-Source:
-* <https://github.com/tjungbauer/helm-charts>
-* <https://charts.stderr.at/>
-* <https://github.com/tjungbauer/openshift-clusterconfig-gitops>
-
-Source code: https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-operator
-
-## Parameters
+# Parameters
 
 ## Values
 
@@ -132,7 +110,7 @@ operators:
 To install the chart with the release name `my-release`:
 
 ```console
-helm install my-release tjungbauer/<chart-name>>
+helm install my-release tsavr/<chart-name>>
 ```
 
 The command deploys the chart on the Kubernetes cluster in the default configuration.

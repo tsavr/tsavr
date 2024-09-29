@@ -4,8 +4,8 @@
 
   [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/openshift-bootstraps)](https://artifacthub.io/packages/search?repo=openshift-bootstraps)
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![Lint and Test Charts](https://github.com/tjungbauer/helm-charts/actions/workflows/lint_and_test_charts.yml/badge.svg)](https://github.com/tjungbauer/helm-charts/actions/workflows/lint_and_test_charts.yml)
-  [![Release Charts](https://github.com/tjungbauer/helm-charts/actions/workflows/release.yml/badge.svg)](https://github.com/tjungbauer/helm-charts/actions/workflows/release.yml)
+  [![Lint and Test Charts](https://github.com/tsavr/tsavr/actions/workflows/lint_and_test_charts.yml/badge.svg)](https://github.com/tsavr/tsavr/actions/workflows/lint_and_test_charts.yml)
+  [![Release Charts](https://github.com/tsavr/tsavr/actions/workflows/release.yml/badge.svg)](https://github.com/tsavr/tsavr/actions/workflows/release.yml)
 
   ![Version: 1.0.9](https://img.shields.io/badge/Version-1.0.9-informational?style=flat-square)
 
@@ -33,15 +33,15 @@ No dependencies
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| tjungbauer | <tjungbau@redhat.com> | <https://blog.stderr.at/> |
+| tsavr | <tjungbau@redhat.com> | <https://blog.stderr.at/> |
 
 ## Sources
 Source:
-* <https://github.com/tjungbauer/helm-charts>
+* <https://github.com/tsavr/tsavr>
 * <https://charts.stderr.at/>
-* <https://github.com/tjungbauer/openshift-clusterconfig-gitops>
+* <https://github.com/tsavr/openshift-clusterconfig-gitops>
 
-Source code: https://github.com/tjungbauer/helm-charts/tree/main/charts/tpl
+Source code: https://github.com/tsavr/tsavr/tree/main/charts/tpl
 
 ## Values
 
@@ -96,7 +96,7 @@ namespace:
 To install the chart with the release name `my-release`:
 
 ```console
-helm install my-release tjungbauer/<chart-name>>
+helm install my-release tsavr/<chart-name>>
 ```
 
 The command deploys the chart on the Kubernetes cluster in the default configuration.

@@ -1,0 +1,9 @@
+apiVersion: v2
+name: gitops-status-checker
+description: A helper Chart that creates a job to verify if the deployments of an operator are running. To do so it creates a service account with a role to read the status of the Deployments.
+version: 1.0.1
+
+dependencies:
+  - name: helpers
+    version: ~1.0.0
+    repository: https://tsavr.github.io/tsavr
