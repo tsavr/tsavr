@@ -1,0 +1,9 @@
+apiVersion: v2
+name: gitops-argocd
+description: Takes care of creation of Applications, Appprojects and ApplicationSets (supporting different generators)
+version: 1.0.1
+
+dependencies:
+  - name: helpers
+    version: ~1.0.0
+    repository: https://tsavr.github.io/tsavr

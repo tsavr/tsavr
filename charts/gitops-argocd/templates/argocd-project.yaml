@@ -1,0 +1,23 @@
+{{- range $key, $value := .Values.argocd_projects }}
+{{ if eq ($value.enabled | toString) "true" }}
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  name: {{ $value.name }}
+  namespace: {{ $value.namespace | default "openshift-gitops" }}
+  labels:
+    {{- include "helperslabels" $ | nindent 4 }}
+spec:
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  destinations:
+    - namespace: '*'
+      server: '*'
+  sourceRepos:
+    - '*'
+---
+{{- end }}
+{{- end }}
