@@ -55,6 +55,16 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/gotify-0.1.1/gotify-0.1.1.tgz
     version: 0.1.1
+  helpers:
+  - apiVersion: v2
+    created: "2024-09-29T07:54:04.353849497Z"
+    description: A library that shall collect certain templates to reuse them among
+      different charts.
+    digest: f47571cff247de1c09eccc53b21186b790d6d595e982595d5a820ed3c5e26acd
+    name: helpers
+    urls:
+    - https://github.com/tsavr/tsavr/releases/download/helpers-1.0.0/helpers-1.0.0.tgz
+    version: 1.0.0
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: v1.4.0
@@ -98,4 +108,4 @@ entries:
     urls:
     - https://github.com/tsavr/tsavr/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
     version: 0.1.7
-generated: "2023-09-24T01:54:33.185712278Z"
+generated: "2024-09-29T07:54:04.353869014Z"
